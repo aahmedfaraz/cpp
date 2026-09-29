@@ -1,3 +1,3 @@
-# C++ Practice
+# Learning C++
 
 Roadmap: [https://roadmap.sh/cpp](https://roadmap.sh/cpp)
