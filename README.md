@@ -2,7 +2,7 @@
 
 ### 🗺️ Roadmap
 
-[roadmap.sh — C++ Roadmap](https://roadmap.sh/cpp)
+[roadmap.sh, C++ Roadmap](https://roadmap.sh/cpp)
 
 ### 📊 Progress
 
