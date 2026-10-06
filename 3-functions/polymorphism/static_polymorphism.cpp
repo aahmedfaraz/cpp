@@ -1,0 +1,50 @@
+// Static polymorphism is achieved through the use of templates in C++. 
+// It allows a function to behave differently based on the type of the object that invokes it, enabling compile-time method binding.
+
+#include <iostream>
+
+struct TreeNode { 
+    int value;
+    TreeNode *left, *right; 
+    TreeNode(int val) : value(val), left(nullptr), right(nullptr) {}
+};
+
+template <typename T> 
+class GenericParser {
+    public:
+        void parse_preorder(TreeNode* node) {
+            if (node) {
+                process_node(node);
+                parse_preorder(node->left);
+                parse_preorder(node->right);
+            }
+        }
+    
+        void process_node(TreeNode* node) {
+            static_cast<T*>(this)->process_node(node);
+        }
+};
+
+class EmployeeChart_Parser : public GenericParser<EmployeeChart_Parser> {
+    public:
+        void process_node(TreeNode* node) {
+            std::cout << "Print Node: " << node->value << std::endl;
+        }
+};
+
+int main() {
+    TreeNode* root = new TreeNode(10);
+    root->left = new TreeNode(20);
+    root->right = new TreeNode(30);
+
+    EmployeeChart_Parser ep;
+    ep.parse_preorder(root);
+
+    return 0;
+}
+
+// Output:
+
+// Print Node: 10
+// Print Node: 20
+// Print Node: 30
