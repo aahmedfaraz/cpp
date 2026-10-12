@@ -38,5 +38,16 @@ int main() {
     int result = pAdd(5, 10); // Output: 15 (call the function using the pointer)
     std::cout << result << std::endl; // Output: 15 (value returned by the function)
 
+    // REFERENCES: alias for another variable (another name for a variable)
+    std::string food = "Pizza";
+    std::string &meal = food; // reference to a string variable
+
+    // Note: Both food and meal refer to the same memory location. Changing one affects the other.
+
+    meal = "Burger"; // change the value of the variable using the reference
+
+    std::cout << food << std::endl; // Output: Burger
+    std::cout << meal << std::endl; // Output: Burger
+
     return 0;
 }
