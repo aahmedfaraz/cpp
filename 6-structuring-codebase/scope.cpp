@@ -1,6 +1,19 @@
 #include <iostream>
 using namespace std;
 
+// In C++, variables are only accessible inside the region they are created. This is called scope.
+
+// A variable created inside a function belongs to the local scope of that function, and can only be used inside that function.
+
+// A variable created outside of a function, is called a global variable and belongs to the global scope.
+
+// If you operate with the same variable name inside and outside of a function, C++ will treat them as two separate variables; 
+// One available in the global scope (outside the function) and one available in the local scope (inside the function)
+
+// However, you should avoid using the same variable name for both globally and locally variables as it can lead to errors and confusion.
+
+// In general, you should be careful with global variables, since they can be accessed and modified from any function
+
 // Global variable x
 int x = 5;
 
