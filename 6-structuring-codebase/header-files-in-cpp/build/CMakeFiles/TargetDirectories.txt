@@ -1,0 +1,3 @@
+D:/GitHub/cpp/6-structuring-codebase/header-files-in-cpp/build/CMakeFiles/ahmed_app.dir
+D:/GitHub/cpp/6-structuring-codebase/header-files-in-cpp/build/CMakeFiles/edit_cache.dir
+D:/GitHub/cpp/6-structuring-codebase/header-files-in-cpp/build/CMakeFiles/rebuild_cache.dir

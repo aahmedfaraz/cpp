@@ -1,0 +1,7 @@
+# ninja log v7
+39	77	8136178036806893	D:/GitHub/cpp/6-structuring-codebase/header-files-in-cpp/build/CMakeFiles/cmake.verify_globs	48aa084d41d174ef
+25	59	8136178596268568	D:/GitHub/cpp/6-structuring-codebase/header-files-in-cpp/build/CMakeFiles/cmake.verify_globs	48aa084d41d174ef
+65	161	8136178596667737	CMakeFiles/ahmed_app.dir/src/math/calculus.cpp.obj	c91a9a1f6b884d9e
+69	169	8136178596708770	CMakeFiles/ahmed_app.dir/src/math/math.cpp.obj	2fdb7435ed0e7a80
+59	429	8136178596617750	CMakeFiles/ahmed_app.dir/src/main.cpp.obj	cae2a22b9c488c40
+430	612	8136178600318024	ahmed_app.exe	e6358453c4769dce
