@@ -50,9 +50,15 @@ public:
         else
             cout << name << ", sorry NO promotion for you!" << endl;
     }
-    virtual void work() {
+    
+    // The `const` after () means this function promises not to modify the object's member variables.
+    // `override` means, I intend to replace a virtual function inherited from the base class. Please check that I'm doing it correctly.
+    virtual void work() const {
         cout << name << " is checking emails, task backlog, performing tasks..." << endl;
     }
+
+    virtual ~Employee() = default; // // Virtual destructor ensures derived class destructors are called when deleting objects through base-class pointers.
+    // and default tells the compiler to generate the default implementation of the destructor.
 };
 
 class Developer: public Employee { // inheritance
@@ -67,7 +73,7 @@ public:
     void FixBug() {
         cout << name << " fixed bug using " << fav_programming_language << endl;
     }
-    void work() { // overriding the base class method (polymorphism)
+    void work() const override { // overriding the base class method (polymorphism)
         cout << name << " is writing " << fav_programming_language << " code" << endl;
     }
 };
@@ -84,7 +90,7 @@ public:
     {
         this-> subject = subject;
     }
-    void work() { // overriding the base class method (polymorphism)
+    void work() const override { // overriding the base class method (polymorphism)
         cout << name << " is teaching " << subject << endl;
     }
 };
