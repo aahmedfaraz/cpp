@@ -78,7 +78,7 @@ In simple words: Abstraction hides how something works and shows what it does.
 
 Inheritance in OOP is a feature that allows a class to acquire the properties and methods of another class, enabling code reuse.
 
-### C++ Example
+Example in C++:
 
 ```cpp
 class Animal {
@@ -98,3 +98,37 @@ int main() {
 ```
 
 In simple words: Inheritance allows a class to reuse the properties and methods of another class.
+
+## 4. Polymorphism
+
+Polymorphism in OOP means that the same function or interface can behave differently depending on the object or the arguments.
+
+Example in C++:
+
+```cpp
+#include <iostream>
+using namespace std;
+
+class Animal {
+public:
+    virtual void sound() {
+        cout << "Animal makes a sound\n";
+    }
+};
+
+class Dog : public Animal {
+public:
+    void sound() override {
+        cout << "Dog barks\n";
+    }
+};
+
+class Cat : public Animal {
+public:
+    void sound() override {
+        cout << "Cat meows\n";
+    }
+};
+```
+
+In simple words: Polymorphism allows the same method, such as `sound()`, to produce different behaviors for different objects.
