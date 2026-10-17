@@ -74,3 +74,27 @@ The user only calls `makeCoffee()` without needing to know the internal steps in
 
 In simple words: Abstraction hides how something works and shows what it does.
 
+## 3. Inheritance
+
+Inheritance in OOP is a feature that allows a class to acquire the properties and methods of another class, enabling code reuse.
+
+### C++ Example
+
+```cpp
+class Animal {
+public:
+    void eat() {
+        cout << "Eating...";
+    }
+};
+
+class Dog : public Animal {
+};
+
+int main() {
+    Dog dog;
+    dog.eat();  // Inherited from Animal
+}
+```
+
+In simple words: Inheritance allows a class to reuse the properties and methods of another class.
