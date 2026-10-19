@@ -5,9 +5,32 @@
 // using namespace std;
 
 
-
 int main() {
+    // template <typename T>
+    // class Car {
+    // public:
+    //     std::string name;
+    //     std::string color;
+    //     Car(std::string name, std::string color): name(name), color(color) {}
+    //     void display() {
+    //         static_cast<T*>(this)->display();
+    //     }
+    // };
 
+    // class ElectricCar: public Car<ElectricCar> {
+    //     int battery_capacity;
+    // public:
+    //     ElectricCar(std::string name, std::string color, int battery_capacity): Car(name, color), battery_capacity(battery_capacity) {}
+    //     void display() {
+    //         std::cout << "Child class" << std::endl;
+    //     }
+    // };
+    // ElectricCar ecar("Tesla", "Blue", 100);
+    // ecar.display(); // Output: Child class
+    // ElectricCar ecar2("Nissan", "Green", 80);
+    // ecar2.display(); // Output: Child class
+    // ecar2.Car<ElectricCar>::display(); // Output: Child class
+    // // lesson: the display() function of the parent class is called instead of the child class
 
 
 
