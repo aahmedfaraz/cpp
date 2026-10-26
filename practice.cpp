@@ -2,10 +2,23 @@
 // #include <bitset>
 // #include <vector>
 // #include <algorithm>
-// using namespace std;
-
+using namespace std;
 
 int main() {
+    int* ptr = new int(10); // dynamically allocated memory for an integer
+
+    int* ptr2 = ptr; // copy the pointer, both ptr and ptr2 point to the same memory location
+
+    ptr = nullptr; // set ptr to nullptr, but ptr2 still points to the allocated memory
+
+    cout << "Address: " << ptr2 << endl; // Address: 0x28334d6b420
+    cout << "Value: " << *ptr2 << endl; // Value: 10
+    cout << "Address: " << ptr << endl; // Address: 0
+    cout << "Value: " << *ptr << endl; // Value: Segmentation fault
+
+
+
+
     // template <typename T>
     // class Car {
     // public:
